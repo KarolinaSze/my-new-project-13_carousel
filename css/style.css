@@ -1,0 +1,80 @@
+* {
+  box-sizing:border-box; 
+}
+
+#carousel {
+	margin: 0 auto;
+	width: 450px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+ul {
+	margin: 0;
+ 	padding: 0;
+ 	width: 2250px;
+}
+
+li {
+ 	display: inline-block;
+ 	list-style: none;
+ 	float: left;
+ 	width: 100%;
+}
+
+ul li  {
+ 	width: 450px;
+ 	height: 300px;
+}
+
+.signs {
+ 	width: 100%;
+ 	height: 300px;
+ 	position: absolute;
+}
+
+.signs .fa { 
+ 	padding: 5px;
+ 	color: #fff;
+ 	position: absolute;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	transition: ease-in-out .3s;
+ 	opacity: 0.5;
+}
+
+.signs .fa-chevron-right {
+ 	right: 0;
+ 	font-size: 26px;
+}
+
+.signs .fa-chevron-left {
+ 	font-size: 26px;
+}
+
+.dots {
+ 	position: absolute;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+ 	bottom: 0;
+}
+.signs .fa-circle {
+	position: relative;
+	opacity: 0;
+}
+
+.signs .fa-circle-o {
+	position: absolute;
+	top: 0;
+	opacity: 1;
+}
+
+.signs:hover i {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.signs .fa-circle:hover {
+	opacity: 1;
+}
